@@ -644,7 +644,7 @@
 
             } catch (error) {
                 removeTypingIndicator();
-                appendAIBubble("잠시 연결이 고르지 못했어요. 인터넷 상태를 확인하고 다시 한 번 말씀해 주시겠어요?");
+                appendAIBubble("에러 원인: " + error.message");
                 chatHistory.pop();
             } finally {
                 isGenerating = false;
